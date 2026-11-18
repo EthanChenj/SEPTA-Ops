@@ -1,0 +1,18 @@
+{
+  "model_type": "FallbackDelayModel",
+  "n_samples": 500,
+  "feature_columns": [
+    "departure_hour",
+    "day_of_week",
+    "is_weekend",
+    "is_peak_hour",
+    "temp_f",
+    "precipitation_inches",
+    "wind_speed_mph",
+    "has_active_detour",
+    "historical_route_otp",
+    "is_airport_line"
+  ],
+  "train_mae": 1.012,
+  "train_rmse": 1.27
+}

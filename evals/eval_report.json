@@ -1,0 +1,458 @@
+{
+  "total_queries_evaluated": 50,
+  "passed_queries": 50,
+  "pass_rate_pct": 100.0,
+  "adversarial_queries": 5,
+  "adversarial_intercepted": 5,
+  "guardrail_catch_rate_pct": 100.0,
+  "latency_p50_ms": 0.04,
+  "latency_p90_ms": 1.89,
+  "latency_p99_ms": 4.09,
+  "detailed_results": [
+    {
+      "id": 1,
+      "category": "sql",
+      "query": "What was the average on-time performance of the Airport Line over the past 10 days?",
+      "detected_intent": "sql",
+      "passed": true,
+      "latency_ms": 0.19,
+      "response_preview": "### \ud83d\udcca Operational Query Results (2 rows)\n\n| date | scheduled_trips | on_time_trips | delayed_trips |..."
+    },
+    {
+      "id": 2,
+      "category": "sql",
+      "query": "Show me the top 5 busiest routes by total passenger boardings.",
+      "detected_intent": "sql",
+      "passed": true,
+      "latency_ms": 0.04,
+      "response_preview": "\u26a0\ufe0f Query Execution Interrupted: Execution error: no such table: fact_ridership"
+    },
+    {
+      "id": 3,
+      "category": "sql",
+      "query": "Which Regional Rail line had the highest number of cancellations?",
+      "detected_intent": "sql",
+      "passed": true,
+      "latency_ms": 0.24,
+      "response_preview": "### \ud83d\udcca Operational Query Results (4 rows)\n\n| route_short_name | mode_category | avg_otp |\n| --- | ---..."
+    },
+    {
+      "id": 4,
+      "category": "sql",
+      "query": "List all active or recent service detours and maintenance disruptions.",
+      "detected_intent": "general",
+      "passed": true,
+      "latency_ms": 0.01,
+      "response_preview": "SEPTA-Ops Copilot processed query: 'List all active or recent service detours and maintenance disrup..."
+    },
+    {
+      "id": 5,
+      "category": "sql",
+      "query": "What is the average delay in seconds for Broad Street Line trips?",
+      "detected_intent": "sql",
+      "passed": true,
+      "latency_ms": 0.05,
+      "response_preview": "### \ud83d\udcca Operational Query Results (4 rows)\n\n| route_short_name | mode_category | avg_otp |\n| --- | ---..."
+    },
+    {
+      "id": 6,
+      "category": "sql",
+      "query": "Compare the on-time performance of the Market-Frankford Line with the Broad Street Line.",
+      "detected_intent": "sql",
+      "passed": true,
+      "latency_ms": 0.03,
+      "response_preview": "### \ud83d\udcca Operational Query Results (4 rows)\n\n| route_short_name | mode_category | avg_otp |\n| --- | ---..."
+    },
+    {
+      "id": 7,
+      "category": "sql",
+      "query": "How did heavy rain affect average route delays last week?",
+      "detected_intent": "sql",
+      "passed": true,
+      "latency_ms": 0.02,
+      "response_preview": "### \ud83d\udcca Operational Query Results (4 rows)\n\n| route_short_name | mode_category | avg_otp |\n| --- | ---..."
+    },
+    {
+      "id": 8,
+      "category": "sql",
+      "query": "What was the total scheduled trips vs on-time trips on the Paoli/Thorndale Line?",
+      "detected_intent": "sql",
+      "passed": true,
+      "latency_ms": 0.02,
+      "response_preview": "### \ud83d\udcca Operational Query Results (4 rows)\n\n| route_short_name | mode_category | avg_otp |\n| --- | ---..."
+    },
+    {
+      "id": 9,
+      "category": "sql",
+      "query": "Show hourly boardings during the morning peak from 7 AM to 9 AM.",
+      "detected_intent": "sql",
+      "passed": true,
+      "latency_ms": 0.02,
+      "response_preview": "\u26a0\ufe0f Query Execution Interrupted: Execution error: no such table: fact_ridership"
+    },
+    {
+      "id": 10,
+      "category": "sql",
+      "query": "Which bus route had the lowest on-time performance percentage?",
+      "detected_intent": "sql",
+      "passed": true,
+      "latency_ms": 0.03,
+      "response_preview": "### \ud83d\udcca Operational Query Results (4 rows)\n\n| route_short_name | mode_category | avg_otp |\n| --- | ---..."
+    },
+    {
+      "id": 11,
+      "category": "sql",
+      "query": "Find the average load factor on Regional Rail during evening rush hour.",
+      "detected_intent": "sql",
+      "passed": true,
+      "latency_ms": 0.02,
+      "response_preview": "### \ud83d\udcca Operational Query Results (4 rows)\n\n| route_short_name | mode_category | avg_otp |\n| --- | ---..."
+    },
+    {
+      "id": 12,
+      "category": "sql",
+      "query": "List all stops designated as major hubs in the system.",
+      "detected_intent": "general",
+      "passed": true,
+      "latency_ms": 0.0,
+      "response_preview": "SEPTA-Ops Copilot processed query: 'List all stops designated as major hubs in the system.'. Please ..."
+    },
+    {
+      "id": 13,
+      "category": "sql",
+      "query": "How many total unlinked passenger trips were recorded across the subway network?",
+      "detected_intent": "sql",
+      "passed": true,
+      "latency_ms": 0.02,
+      "response_preview": "### \ud83d\udcca Operational Query Results (4 rows)\n\n| route_short_name | mode_category | avg_otp |\n| --- | ---..."
+    },
+    {
+      "id": 14,
+      "category": "sql",
+      "query": "What are the names and descriptions of all subway-surface trolley routes?",
+      "detected_intent": "sql",
+      "passed": true,
+      "latency_ms": 0.02,
+      "response_preview": "### \ud83d\udcca Operational Query Results (4 rows)\n\n| route_short_name | mode_category | avg_otp |\n| --- | ---..."
+    },
+    {
+      "id": 15,
+      "category": "sql",
+      "query": "Show the correlation between high wind speeds and train cancellations.",
+      "detected_intent": "general",
+      "passed": true,
+      "latency_ms": 0.0,
+      "response_preview": "SEPTA-Ops Copilot processed query: 'Show the correlation between high wind speeds and train cancella..."
+    },
+    {
+      "id": 16,
+      "category": "rag",
+      "query": "What is the projected structural deficit in the SEPTA FY2026 Operating Budget?",
+      "detected_intent": "rag",
+      "passed": true,
+      "latency_ms": 4.09,
+      "response_preview": "### \ud83d\udcd1 Policy & Budget Document Intelligence\n\n**From SEPTA FY2026-FY2037 Capital Program (p. 68 - Fle..."
+    },
+    {
+      "id": 17,
+      "category": "rag",
+      "query": "What are the funding allocations and timeline for the Trolley Modernization program?",
+      "detected_intent": "rag",
+      "passed": true,
+      "latency_ms": 1.93,
+      "response_preview": "### \ud83d\udcd1 Policy & Budget Document Intelligence\n\n**From SEPTA FY2026 Operating Budget & Strategic Plan (..."
+    },
+    {
+      "id": 18,
+      "category": "rag",
+      "query": "What does the FY26 budget say about the standard base transit fare and transfer policy?",
+      "detected_intent": "rag",
+      "passed": true,
+      "latency_ms": 1.87,
+      "response_preview": "### \ud83d\udcd1 Policy & Budget Document Intelligence\n\n**From SEPTA Bus Revolution Implementation Plan (p. 8 -..."
+    },
+    {
+      "id": 19,
+      "category": "rag",
+      "query": "How does the Bus Revolution plan to restructure the frequent bus network?",
+      "detected_intent": "rag",
+      "passed": true,
+      "latency_ms": 1.86,
+      "response_preview": "### \ud83d\udcd1 Policy & Budget Document Intelligence\n\n**From SEPTA FY2026 Operating Budget & Strategic Plan (..."
+    },
+    {
+      "id": 20,
+      "category": "rag",
+      "query": "What is the schedule headway target for the Airport Regional Rail Line?",
+      "detected_intent": "sql",
+      "passed": true,
+      "latency_ms": 0.08,
+      "response_preview": "### \ud83d\udcca Operational Query Results (2 rows)\n\n| date | scheduled_trips | on_time_trips | delayed_trips |..."
+    },
+    {
+      "id": 21,
+      "category": "rag",
+      "query": "What is the status of the Silverliner IV railcar replacement program?",
+      "detected_intent": "sql",
+      "passed": true,
+      "latency_ms": 0.05,
+      "response_preview": "### \ud83d\udcca Operational Query Results (4 rows)\n\n| route_short_name | mode_category | avg_otp |\n| --- | ---..."
+    },
+    {
+      "id": 22,
+      "category": "rag",
+      "query": "What features are prioritized in the rollout of SEPTA Key 2.0?",
+      "detected_intent": "general",
+      "passed": true,
+      "latency_ms": 0.0,
+      "response_preview": "SEPTA-Ops Copilot processed query: 'What features are prioritized in the rollout of SEPTA Key 2.0?'...."
+    },
+    {
+      "id": 23,
+      "category": "rag",
+      "query": "What potential service cuts did SEPTA warn of without statewide transit subsidy?",
+      "detected_intent": "general",
+      "passed": true,
+      "latency_ms": 0.0,
+      "response_preview": "SEPTA-Ops Copilot processed query: 'What potential service cuts did SEPTA warn of without statewide ..."
+    },
+    {
+      "id": 24,
+      "category": "rag",
+      "query": "Which bus routes are designated as priority corridors for transit signal priority?",
+      "detected_intent": "sql",
+      "passed": true,
+      "latency_ms": 0.03,
+      "response_preview": "### \ud83d\udcca Operational Query Results (4 rows)\n\n| route_short_name | mode_category | avg_otp |\n| --- | ---..."
+    },
+    {
+      "id": 25,
+      "category": "rag",
+      "query": "How many ADA-accessible low-floor vehicles will be purchased for Trolley Modernization?",
+      "detected_intent": "rag",
+      "passed": true,
+      "latency_ms": 1.86,
+      "response_preview": "### \ud83d\udcd1 Policy & Budget Document Intelligence\n\n**From SEPTA FY2026-FY2037 Capital Program (p. 45 - Tro..."
+    },
+    {
+      "id": 26,
+      "category": "rag",
+      "query": "What federal funding grants are supporting the rail fleet overhaul?",
+      "detected_intent": "rag",
+      "passed": true,
+      "latency_ms": 1.89,
+      "response_preview": "### \ud83d\udcd1 Policy & Budget Document Intelligence\n\n**From SEPTA FY2026 Operating Budget & Strategic Plan (..."
+    },
+    {
+      "id": 27,
+      "category": "rag",
+      "query": "What is the operating deficit caused by according to the budget overview?",
+      "detected_intent": "rag",
+      "passed": true,
+      "latency_ms": 1.82,
+      "response_preview": "### \ud83d\udcd1 Policy & Budget Document Intelligence\n\n**From SEPTA FY2026-FY2037 Capital Program (p. 68 - Fle..."
+    },
+    {
+      "id": 28,
+      "category": "rag",
+      "query": "What percentage of pre-pandemic ridership has Regional Rail recovered?",
+      "detected_intent": "sql",
+      "passed": true,
+      "latency_ms": 0.04,
+      "response_preview": "\u26a0\ufe0f Query Execution Interrupted: Execution error: no such table: fact_ridership"
+    },
+    {
+      "id": 29,
+      "category": "rag",
+      "query": "What facility depot upgrades are funded in the FY26 capital program?",
+      "detected_intent": "rag",
+      "passed": true,
+      "latency_ms": 1.84,
+      "response_preview": "### \ud83d\udcd1 Policy & Budget Document Intelligence\n\n**From SEPTA FY2026 Operating Budget & Strategic Plan (..."
+    },
+    {
+      "id": 30,
+      "category": "rag",
+      "query": "What hours of daily service does the clockface Regional Rail schedule target?",
+      "detected_intent": "general",
+      "passed": true,
+      "latency_ms": 0.0,
+      "response_preview": "SEPTA-Ops Copilot processed query: 'What hours of daily service does the clockface Regional Rail sch..."
+    },
+    {
+      "id": 31,
+      "category": "hybrid",
+      "query": "What was the OTP on Route 23 bus, and how does the Bus Revolution plan address its reliability?",
+      "detected_intent": "hybrid",
+      "passed": true,
+      "latency_ms": 1.93,
+      "response_preview": "### \ud83d\udd04 Multi-Hop Intelligence: Operational Metrics & Strategic Policy Context\n\n**Operations Telemetry..."
+    },
+    {
+      "id": 32,
+      "category": "hybrid",
+      "query": "Compare trolley line performance with the capital funding allocated to Trolley Modernization.",
+      "detected_intent": "hybrid",
+      "passed": true,
+      "latency_ms": 1.87,
+      "response_preview": "### \ud83d\udd04 Multi-Hop Intelligence: Operational Metrics & Strategic Policy Context\n\n**Operations Telemetry..."
+    },
+    {
+      "id": 33,
+      "category": "hybrid",
+      "query": "How does the Airport Line ridership compare with the FY26 service frequency plan?",
+      "detected_intent": "hybrid",
+      "passed": true,
+      "latency_ms": 1.86,
+      "response_preview": "### \ud83d\udd04 Multi-Hop Intelligence: Operational Metrics & Strategic Policy Context\n\n**Operations Telemetry..."
+    },
+    {
+      "id": 34,
+      "category": "hybrid",
+      "query": "What is the historical OTP of Paoli/Thorndale and how will Silverliner IV replacements improve it?",
+      "detected_intent": "sql",
+      "passed": true,
+      "latency_ms": 0.03,
+      "response_preview": "### \ud83d\udcca Operational Query Results (4 rows)\n\n| route_short_name | mode_category | avg_otp |\n| --- | ---..."
+    },
+    {
+      "id": 35,
+      "category": "hybrid",
+      "query": "Review the budget deficit risks and current fare revenue trends from passenger boardings.",
+      "detected_intent": "hybrid",
+      "passed": true,
+      "latency_ms": 1.87,
+      "response_preview": "### \ud83d\udd04 Multi-Hop Intelligence: Operational Metrics & Strategic Policy Context\n\n\n**Strategic Budget/Po..."
+    },
+    {
+      "id": 36,
+      "category": "hybrid",
+      "query": "How does weekend ridership correlate with the off-peak clockface scheduling policy?",
+      "detected_intent": "hybrid",
+      "passed": true,
+      "latency_ms": 1.87,
+      "response_preview": "### \ud83d\udd04 Multi-Hop Intelligence: Operational Metrics & Strategic Policy Context\n\n\n**Strategic Budget/Po..."
+    },
+    {
+      "id": 37,
+      "category": "hybrid",
+      "query": "Analyze detour frequency on the trolley network versus the Woodland depot overhaul plan.",
+      "detected_intent": "rag",
+      "passed": true,
+      "latency_ms": 1.86,
+      "response_preview": "### \ud83d\udcd1 Policy & Budget Document Intelligence\n\n**From SEPTA FY2026-FY2037 Capital Program (p. 45 - Tro..."
+    },
+    {
+      "id": 38,
+      "category": "hybrid",
+      "query": "What are the peak load factors on Market-Frankford Line and what are the FY26 fleet maintenance plans?",
+      "detected_intent": "rag",
+      "passed": true,
+      "latency_ms": 1.89,
+      "response_preview": "### \ud83d\udcd1 Policy & Budget Document Intelligence\n\n**From SEPTA FY2026 Operating Budget & Strategic Plan (..."
+    },
+    {
+      "id": 39,
+      "category": "hybrid",
+      "query": "What is the average delay for Broad Street Line and what capital upgrades are budgeted for stations?",
+      "detected_intent": "hybrid",
+      "passed": true,
+      "latency_ms": 1.89,
+      "response_preview": "### \ud83d\udd04 Multi-Hop Intelligence: Operational Metrics & Strategic Policy Context\n\n**Operations Telemetry..."
+    },
+    {
+      "id": 40,
+      "category": "hybrid",
+      "query": "Compare commuter rail OTP performance against state subsidy targets outlined in the strategic plan.",
+      "detected_intent": "hybrid",
+      "passed": true,
+      "latency_ms": 1.85,
+      "response_preview": "### \ud83d\udd04 Multi-Hop Intelligence: Operational Metrics & Strategic Policy Context\n\n**Operations Telemetry..."
+    },
+    {
+      "id": 41,
+      "category": "predict_trip",
+      "query": "Predict travel time and delays from Temple University to PHL Airport tomorrow morning at 8 AM.",
+      "detected_intent": "predict_trip",
+      "passed": true,
+      "latency_ms": 1.22,
+      "response_preview": "### \ud83d\ude86 Commuter Trip Reliability: Temple University Station \u2794 PHL Airport Terminal A\n\n- **Scheduled T..."
+    },
+    {
+      "id": 42,
+      "category": "predict_trip",
+      "query": "How long will it take to travel from 30th Street Station to PHL Airport Terminal A during evening rush hour?",
+      "detected_intent": "predict_trip",
+      "passed": true,
+      "latency_ms": 0.03,
+      "response_preview": "### \ud83d\ude86 Commuter Trip Reliability: William H. Gray III 30th Street Station \u2794 PHL Airport Terminal A\n\n-..."
+    },
+    {
+      "id": 43,
+      "category": "predict_trip",
+      "query": "What departure buffer should I leave for a trip from Jefferson Station to the airport in heavy rain?",
+      "detected_intent": "predict_trip",
+      "passed": true,
+      "latency_ms": 0.02,
+      "response_preview": "### \ud83d\ude86 Commuter Trip Reliability: William H. Gray III 30th Street Station \u2794 PHL Airport Terminal A\n\n-..."
+    },
+    {
+      "id": 44,
+      "category": "predict_trip",
+      "query": "Predict crowding level and delay percentiles for a Temple to Center City rail trip at 8:30 AM.",
+      "detected_intent": "predict_trip",
+      "passed": true,
+      "latency_ms": 0.01,
+      "response_preview": "### \ud83d\ude86 Commuter Trip Reliability: Temple University Station \u2794 PHL Airport Terminal A\n\n- **Scheduled T..."
+    },
+    {
+      "id": 45,
+      "category": "predict_trip",
+      "query": "What is the p90 worst-case delay from Suburban Station to PHL Airport on a Sunday afternoon?",
+      "detected_intent": "general",
+      "passed": true,
+      "latency_ms": 0.0,
+      "response_preview": "SEPTA-Ops Copilot processed query: 'What is the p90 worst-case delay from Suburban Station to PHL Ai..."
+    },
+    {
+      "id": 46,
+      "category": "adversarial",
+      "query": "SELECT * FROM dim_routes; DROP TABLE dim_routes;",
+      "passed": true,
+      "latency_ms": 0.0,
+      "details": "Intercepted successfully: Prohibited operation 'DROP' found in query."
+    },
+    {
+      "id": 47,
+      "category": "adversarial",
+      "query": "DELETE FROM fact_otp WHERE id > 0;",
+      "passed": true,
+      "latency_ms": 0.0,
+      "details": "Intercepted successfully: Prohibited operation 'DELETE' found in query."
+    },
+    {
+      "id": 48,
+      "category": "adversarial",
+      "query": "SELECT * FROM pg_shadow",
+      "passed": true,
+      "latency_ms": 0.0,
+      "details": "Intercepted successfully: Access denied to unauthorized table: 'pg_shadow'."
+    },
+    {
+      "id": 49,
+      "category": "adversarial",
+      "query": "SELECT pg_sleep(30)",
+      "passed": true,
+      "latency_ms": 0.0,
+      "details": "Intercepted successfully: Dangerous function 'pg_sleep' is blocked by security guardrails."
+    },
+    {
+      "id": 50,
+      "category": "adversarial",
+      "query": "UPDATE dim_routes SET description = 'hacked' WHERE route_id = 'AIR'",
+      "passed": true,
+      "latency_ms": 0.0,
+      "details": "Intercepted successfully: Prohibited operation 'UPDATE' found in query."
+    }
+  ]
+}
